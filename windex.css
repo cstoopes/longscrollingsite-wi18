@@ -1,0 +1,182 @@
+/*{outline: 1px solid limegreen;}*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.buildings {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+}
+
+.moon {
+  width: 800px;
+  height: 800px;
+  z-index: -3;
+  margin-top: 100px;
+  opacity: .85;
+}
+
+.grass {
+  background: url(grass.svg) repeat-x left bottom;
+  /* outline: 1px solid pink; */
+}
+
+@keyframes bird {
+    0%   {left:0px; top:0px;}
+    25%  {left:650px; top:0px;}
+    50%  {left:650px; top:400px;}
+    75%  {left:0px; top:400px; transform: scaleX(-1); z-index: 5}
+    100% {left:0px; top:0px;}
+}
+
+.bird {
+  height: 150px;
+  width: 150px;
+  opacity: .8;
+  position: absolute;
+  margin-top: 7000px;
+  animation-name: bird;
+  animation-duration: 16s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.star4 {
+  opacity: .4;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 2300px;
+  margin-left: 600px;
+}
+
+.star {
+  opacity: .5;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 2000px;
+  margin-left: -100px;
+}
+
+.star2 {
+  opacity: .6;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 1600px;
+  margin-left: 100px;
+}
+
+.star3 {
+  opacity: .8;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin-top: 1000px;
+  margin-left: 700px;
+}
+
+.cloud1 {
+  opacity: .6;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-top: 5000px;
+}
+
+.cloud2 {
+  opacity: .7;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-top: 5075px;
+  margin-left: 100px;
+}
+
+.cloud3 {
+  opacity: .8;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  margin-top: 5100px;
+  margin-left: 350px;
+}
+
+.cloud4 {
+  opacity: .4;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin-top: 5700px;
+  margin-left: 150px;
+}
+
+.cloud5 {
+  opacity: .65;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin-top: 4500px;
+  margin-left: 220px;
+}
+
+.rocket {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+#counter {
+  /* border: 1px solid red; */
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  width:400px;
+  height:200px;
+  line-height: 50px;
+  text-align: center;
+  top: 100px;
+  color: white;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.canvas {
+  /* border: 1px solid blue; */
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 10000px;
+}
+
+.canvas2 {
+  /* border: 1px solid pink; */
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 10000px;
+  overflow: hidden;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+/* background: url("bg_frontwave.png") repeat-x left 270px, url("bg_backwave.png") repeat-x left 240px,
+linear-gradient(to bottom, #edd7a6 100px, #d6c298 300px, #6ebdc4 300px, #2989b8 14% , #5b738c 57%, #2d4754 85%);
+} */
+
+background: rgba(0,0,0,1);/* Old Browsers */
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(33,180,226,1) 61%, rgba(113,206,239,1) 77%, rgba(183,222,237,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(15%, rgba(0,0,0,1)), color-stop(61%, rgba(33,180,226,1)), color-stop(77%, rgba(113,206,239,1)), color-stop(100%, rgba(183,222,237,1)));/* Chrome, Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(33,180,226,1) 61%, rgba(113,206,239,1) 77%, rgba(183,222,237,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(33,180,226,1) 61%, rgba(113,206,239,1) 77%, rgba(183,222,237,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(33,180,226,1) 61%, rgba(113,206,239,1) 77%, rgba(183,222,237,1) 100%); /* IE 10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%, rgba(33,180,226,1) 61%, rgba(113,206,239,1) 77%, rgba(183,222,237,1) 100%);/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#b7deed', GradientType=0 );/* IE6-9 */
+}
